@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="so">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ana Beauty - Beauty Salon</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">AB</div>
+        <div>
+          <div class="brand-name">Ana Beauty</div>
+          <div class="small">Beauty Salon - Muqdisho</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#services">Adeegyada</a>
+        <a href="#team">Kooxda</a>
+        <a href="#contact">Nala Soo Xiriir</a>
+        <button id="openBooking" class="btn btn-primary">Ballanso Hadda</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Ku Soo Dhawoow Ana Beauty</h1>
+        <p>Meesha ugu fiican ee lagu qurxiyo: timaha, ciddiyaha, makeup-ka iyo adeegyo kale oo xirfad leh.</p>
+        <button id="bookHero" class="btn btn-primary">Ballanso Hadda</button>
+      </div>
+      <div class="hero-media">
+        <img src="images/saloninterior.png" alt="Salon interior">
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Adeegyada</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Qurxinta Timaha</h3>
+          <p>Tim jaris, styling iyo treatments xirfadeed.</p>
+        </div>
+        <div class="card">
+          <h3>Makeup Professional</h3>
+          <p>Makeup munaasabado iyo studio makeup.</p>
+        </div>
+        <div class="card">
+          <h3>Manicure & Pedicure</h3>
+          <p>Ciddiyo nadiifin iyo qurxin.</p>
+        </div>
+        <div class="card">
+          <h3>Spa & Massage</h3>
+          <p>Nasasho iyo daweyn jidhka ah.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Sawirro</h2>
+      <div class="gallery-grid">
+        <img src="images/hairstyle.jpg" alt="Hair styling">
+        <img src="images/makeup.jpg" alt="Makeup">
+        <img src="images/manicure.jpg" alt="Manicure">
+        <img src="images/salonchair.jpg" alt="Salon chair">
+      </div>
+    </section>
+
+    <section id="team">
+      <h2>Kooxda</h2>
+      <div class="team-grid">
+        <div class="member">
+          <img src="images/1.jpg" alt="Member">
+          <h4>Fadumo</h4>
+          <p class="small">Stylist</p>
+        </div>
+        <div class="member">
+          <img src="images/3.jpg" alt="Member">
+          <h4>Ayaan</h4>
+          <p class="small">Makeup Artist</p>
+        </div>
+        <div class="member">
+          <img src="images/2.jpg" alt="Member">
+          <h4>Hodan</h4>
+          <p class="small">Nail Technician</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Nala Soo Xiriir</h2>
+      <p>Tel: +252 61 975 1797</p>
+      <p>Email: anabeauty@example.com</p>
+      <p>Goobta: Muqdisho, Soomaaliya</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Ana Beauty. Dhammaan xuquuqaha waa la ilaaliyay.</p>
+    </div>
+  </footer>
+
+  <!-- Booking Modal -->
+  <div id="bookingModal" class="modal" aria-hidden="true">
+    <div class="modal-card">
+      <button id="closeModal" class="modal-close" aria-label="Close">&times;</button>
+      <h3>Ballan Qor</h3>
+      <form id="bookingForm">
+        <label>Magaca*</label>
+        <input type="text" name="name" required>
+        <label>Nambarka*</label>
+        <input type="tel" name="phone" required>
+        <label>Nooca Adeegga*</label>
+        <select name="service" required>
+          <option value="">-- Dooro --</option>
+          <option>Qurxinta Timaha</option>
+          <option>Makeup</option>
+          <option>Manicure & Pedicure</option>
+          <option>Spa</option>
+        </select>
+        <label>Taariikhda*</label>
+        <input type="date" name="date" required>
+        <label>Waqtiga*</label>
+        <input type="time" name="time" required>
+        <label>Fariin (Ikhtiyaari)</label>
+        <textarea name="note" rows="3"></textarea>
+        <div class="modal-actions">
+          <button type="button" id="cancelBtn" class="btn btn-ghost">Jooji</button>
+          <button type="submit" class="btn btn-primary">Dir Ballan</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
